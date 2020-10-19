@@ -32,7 +32,11 @@
     font-weight: 300;
     color: #FFFFFF;
     font-size: 25px;
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
+}
+
+#loginData .user {
+    margin: 0;
 }
 
 #loginData .user input {
@@ -52,6 +56,8 @@
     font-family: 'Poppins', sans-serif;
 
     transition: .5s;
+
+    box-shadow: none;
 }
 
 #loginData .user input:focus {
@@ -67,6 +73,10 @@
     margin-top: 1.4rem;
     margin-left: 1rem;
     z-index: 10;
+}
+
+#loginButton {
+    margin-top: 2rem;
 }
 
 #loginButton button {

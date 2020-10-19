@@ -18,7 +18,7 @@
 .tasksList .date input {
     border: 0;
     outline: none;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 15rem;
     height: 3rem;
     color:  #375064;
@@ -26,6 +26,12 @@
     font-family: 'Poppins', sans-serif;
     padding: 1rem;
     margin-bottom: 1.5rem;
+    transition: .5s;
+}
+
+.tasksList .date input:focus {
+    box-shadow: 0 0 0.1rem 0.2rem #2E4456;
+    border: none;
 }
 
 .tasksList .card {

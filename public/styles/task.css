@@ -14,6 +14,10 @@
     font-weight: 400;
 }
 
+#task .form-check input {
+    position: relative;
+}
+
 #task .title {
     text-align: center;
     font-family: 'Poppins', sans-serif;
@@ -30,7 +34,7 @@
     align-items: center;
     text-align: center;
     border-radius: 1rem;
-    width: 12rem;
+    width: 15rem;
     height: 2.5rem;
     background: #DFDFDF;
     margin: 1rem 0;
@@ -56,28 +60,21 @@
     flex-direction: column;
 }
 
-#task .description span {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    margin: 1rem 0;
-    color: #375064;
-}
-
 #task .description p {
     background-color: #DFDFDF;
     color: #375064;
     padding: .8rem;
     font-family: 'Poppins', sans-serif;
-    font-size: .9rem;
+    font-size: 1.2rem;
     line-height: 1.5;
-    border-radius: .5rem;
+    border-radius: 1rem;
 }
 
 #task .atta {
     margin-top: 2rem;
 }
 
+#task .description span,
 #task .atta span,
 #task #coments label {
     text-align: center;
@@ -85,6 +82,7 @@
     font-weight: 500;
     margin: 1rem 0;
     color: #375064;
+    font-size: 1.5rem;
 }
 
 #task .atta ul {
@@ -102,8 +100,7 @@
     align-items: center;
     background-color: #DFDFDF;
     padding: 1rem;
-    border-radius: .5rem;
-    transition: .5s;
+    border-radius: 1rem;
 }
 
 #task .atta ul li h5 {
@@ -131,13 +128,56 @@
     padding-bottom: 2rem;
 }
 
+#task #coments textarea {
+    border-radius: 1rem;
+    transition: .5s;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#task #coments textarea:focus {
+    box-shadow: 0 0 0.1rem 0.2rem #2E4456;
+    border: none;
+}
+
 #task #coments button {
     background-color: #375064;
     border: none;
+    border-radius: 1rem;
     outline: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     height: 3rem;
+}
+
+#task #coments .otherComents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem; 
+}
+
+#task #coments .otherComents .card {
+    margin: 1rem 0;
+    border-radius: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #375064;
+}
+
+#task #coments .otherComents .card .card-text{
+    text-align: left;
+    line-height: 1.5;
+}
+
+#task #coments .otherComents .card .user-detail {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+#task #coments .otherComents .card span {
+    font-size: .8rem;
+    color: #3b576d;
 }
 
 @media (min-width: 600px) {
@@ -145,11 +185,6 @@
 }
 
 @media (min-width: 992px) {
-    #task .time {
-        width: 10rem;
-        text-align: center;
-    }
-
     #task .atta ul li {
         background-color: #DFDFDF;
         padding: 1rem;
@@ -157,8 +192,8 @@
         transition: .5s;
     }
 
-    #task .atta ul li:hover {
-        transform: scale(1.1);
+    #task .atta ul li svg {
+        cursor: pointer;
     }
 }
 

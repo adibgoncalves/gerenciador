@@ -17,16 +17,15 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 
+    border-radius: 1rem;
+
     margin-bottom: 2rem;
     outline: none;
     border: none;
 
-    transition: .5s;
-}
+    padding: .5rem;
 
-#newtask form .form-group .title input:focus {
-    border-radius: 1rem;
-    border: 0.1rem solid #375064;
+    transition: .5s;
 }
 
 #newtask form .form-group .description textarea {
@@ -35,6 +34,8 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 
+    border-radius: 1rem;
+
     margin-bottom: 2rem;
 
     outline: none;
@@ -43,11 +44,16 @@
     transition: .5s;
 }
 
+#newtask form .form-group .title input:focus,
+#newtask form .form-group .description textarea:focus {
+    box-shadow: 0 0 0.1rem 0.2rem #2E4456;
+}
+
 #newtask form .form-group .atta label {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1.2rem;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 15rem;
     height: 3rem;
     color: #375064;
@@ -66,7 +72,7 @@
 #newtask form button {
     border: 0;
     outline: none;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 15rem;
     height: 3rem;
     color: #FFFFFF;
@@ -78,7 +84,7 @@
 #newtask form .form-group .date input {
     border: 0;
     outline: none;
-    border-radius: 2rem;
+    border-radius: 1rem;
     width: 15rem;
     height: 3rem;
     color:  #375064;
@@ -86,20 +92,32 @@
     font-family: 'Poppins', sans-serif;
     padding: 1rem;
     margin: 1.5rem 0;
+
+    transition: .5s;
 }
+
+#newtask form .form-group .date input:focus {
+    box-shadow: 0 0 0.1rem 0.2rem #2E4456;
+    border: none;
+}
+
+
 
 @media (min-width: 600px) {
 
 }
 
 @media (min-width: 992px) {
-    #newtask form .form-group .atta label:hover {
-        transform: scale(1.2);
-    }
 
     #newtask form button:hover {
         transform: scale(1.1);
         background: #2E4456;
+    }
+
+    #newtask form .information {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
 }
