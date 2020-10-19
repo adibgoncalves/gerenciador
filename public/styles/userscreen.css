@@ -1,0 +1,123 @@
+#userScreen {
+    height: 100vh;
+    background-color: #EDEEF2;
+    text-align: center;
+}
+
+.tasksList .title {
+    margin: 2rem 0  1.5rem;
+}
+
+.tasksList .title p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #375064;
+}
+
+.tasksList .date input {
+    border: 0;
+    outline: none;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 3rem;
+    color:  #375064;
+    text-indent: .3rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.tasksList .card {
+    border-radius: 1rem;
+    height: 8rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    background: #03CEA4;;
+}
+
+.tasksList a {
+    text-decoration: none !important;
+    text-transform: none !important;
+}
+
+.tasksList .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.tasksList .card .time {
+    display: flex;
+    justify-content: space-around;
+    background-color: #375064;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.tasksList h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    color: #FFFFFF !important;
+}
+
+.tasksList .card .time span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.taskCardsLate .card {
+    border-radius: 1rem;
+    height: 8rem;
+    margin: 1rem 0;
+    background-color: #FB4D3D;
+}
+
+.taskCardsLate .card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    
+}
+
+.taskCardsLate .card .timeLate {
+    display: flex;
+    justify-content: space-around;
+    background-color: #375064;
+    border-radius: 0 0 1rem 1rem;
+    align-items: center;
+    height: 2.5rem;
+}
+
+.taskCardsLate h5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+    color: #FFFFFF !important;
+}
+
+.taskCardsLate .card .timeLate span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+
+}

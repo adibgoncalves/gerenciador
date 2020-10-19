@@ -1,0 +1,110 @@
+#userScreen {
+    background-color: #EDEEF2;
+    text-align: center;
+}
+
+#newtask .title p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 1.5rem;
+}
+
+#newtask form .form-group .title input {
+    height: 4rem;
+    text-indent: .5rem;
+    color: #375064;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+    outline: none;
+    border: none;
+
+    transition: .5s;
+}
+
+#newtask form .form-group .title input:focus {
+    border-radius: 1rem;
+    border: 0.1rem solid #375064;
+}
+
+#newtask form .form-group .description textarea {
+    height: 8rem;
+    color: #375064;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+    margin-bottom: 2rem;
+
+    outline: none;
+    border: none;
+
+    transition: .5s;
+}
+
+#newtask form .form-group .atta label {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 3rem;
+    color: #375064;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    padding: .8rem;
+
+    transition: .5s;
+
+}
+
+#newtask form .form-group .atta input[type='file'] {
+    display: none;
+}
+
+#newtask form button {
+    border: 0;
+    outline: none;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 3rem;
+    color: #FFFFFF;
+    background-color: #375064;
+    font-family: 'Poppins', sans-serif;
+    transition: .5s;
+}
+
+#newtask form .form-group .date input {
+    border: 0;
+    outline: none;
+    border-radius: 2rem;
+    width: 15rem;
+    height: 3rem;
+    color:  #375064;
+    text-indent: .3rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 992px) {
+    #newtask form .form-group .atta label:hover {
+        transform: scale(1.2);
+    }
+
+    #newtask form button:hover {
+        transform: scale(1.1);
+        background: #2E4456;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+
+}

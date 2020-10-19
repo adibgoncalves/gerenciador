@@ -1,0 +1,167 @@
+#userScreen {
+    background-color: #EDEEF2;
+}
+
+#task {
+    display: flex;
+    flex-direction: column;
+}
+
+#task .form-check {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#task .title {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#task .time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    width: 12rem;
+    height: 2.5rem;
+    background: #DFDFDF;
+    margin: 1rem 0;
+}
+
+#task .time #date {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #375064;
+    font-size: 1rem;
+}
+
+#task .time #hour {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #5F5F5F;
+    font-size: 1rem;
+}
+
+#task .description,
+#task .atta {
+    display: flex;
+    flex-direction: column;
+}
+
+#task .description span {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #375064;
+}
+
+#task .description p {
+    background-color: #DFDFDF;
+    color: #375064;
+    padding: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+}
+
+#task .atta {
+    margin-top: 2rem;
+}
+
+#task .atta span,
+#task #coments label {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin: 1rem 0;
+    color: #375064;
+}
+
+#task .atta ul {
+    color: #375064;
+    padding: .8rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: .9rem;
+    line-height: 1.5;
+    border-radius: .5rem;
+}
+
+#task .atta ul li {
+    display: flex;
+    align-items: center;
+    background-color: #DFDFDF;
+    padding: 1rem;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+#task .atta ul li h5 {
+    margin-left: .5rem;
+}
+
+#task .atta ul form input[type='file'] {
+    display: none;
+}
+
+#task .atta ul form .form-group {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+#task .atta ul form .form-group label {
+    cursor: pointer;
+}
+
+#task #coments {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+#task #coments button {
+    background-color: #375064;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    height: 3rem;
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 992px) {
+    #task .time {
+        width: 10rem;
+        text-align: center;
+    }
+
+    #task .atta ul li {
+        background-color: #DFDFDF;
+        padding: 1rem;
+        border-radius: .5rem;
+        transition: .5s;
+    }
+
+    #task .atta ul li:hover {
+        transform: scale(1.1);
+    }
+}
+
+@media (min-width: 1200px) {
+
+}

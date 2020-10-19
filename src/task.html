@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tela do usuário</title>
+    
+    <link rel="stylesheet" href="../public/styles/header.css">
+    <link rel="stylesheet" href="../public/styles/task.css">
+    <link rel="stylesheet" href="../public/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="../public/styles/main.css">
+    <link rel="stylesheet" href="../public/styles/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  </head>
+
+  <body id="userScreen">
+    <header>
+      <nav class="container navbar navbar-expand-lg navbar-dark">
+
+        <div class="logo">
+          <img src="../public/img/Logo.png" alt="">
+        </div>
+
+        <div class="hiuser">
+          <p>Olá, Adib Gonçalves</p>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link icon" href="./userscreen.html"><i class="fas fa-home fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link icon" href="./newtask.html"><i class="fas fa-plus-square fa-2x"></i></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link icon" href="../index.html"><i class="fas fa-sign-out-alt fa-2x"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    </header>
+
+    <div id="task" class="container">
+
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+        <label class="form-check-label" for="defaultCheck1">
+          Não concluído
+        </label>
+      </div>
+
+      <div class="title">
+        <p>Estudar</p>
+        <div class="time">
+          <span id="date">18/10/2020</span>
+          <span id="hour">09:00</span>
+        </div>
+      </div>
+
+
+
+      <div class="description">
+        <span>Descrição</span>
+        <p>Vestibulum non accumsan ipsum, convallis auctor dui. Nulla at orci odio. Aliquam aliquet lorem sed egestas sodales. Nam et pharetra eros. In hac habitasse platea dictumst. In tincidunt ultrices cursus. Praesent rutrum rutrum porta. Phasellus et nisi ex.</p>
+      </div>
+
+      <div class="atta">
+        <span>Anexos</span>
+        <ul class="list-unstyled">
+          <li class="media">
+            <i class="fas fa-paperclip"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">anexo1</h5>
+            </div>
+            <i class="fas fa-trash-alt fa-lg"></i>
+          </li>
+          <li class="media my-4">
+            <i class="fas fa-paperclip"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">anexo2</h5>
+            </div>
+            <i class="fas fa-trash-alt fa-lg"></i>
+          </li>
+          <li class="media">
+            <i class="fas fa-paperclip"></i>
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">anexo3</h5>
+            </div>
+            <i class="fas fa-trash-alt fa-lg"></i>
+          </li>
+          <form>
+            <div class="form-group">
+              <label for="attachment"><i class="fas fa-plus-circle fa-2x"></i></label>
+              <input type="file" class="form-control-file" id="attachment">
+            </div>
+          </form>
+        </ul>
+
+        <form id="coments">
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Comentários</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Adicionar comentário</button>
+        </form>
+        
+      </div>
+
+    </div>
+
+    <script src="../public/js/all.min.js"></script>
+    <script src="../public/js/bootstrap.js"></script>
+    <script src="../public/js/sctipt.js"></script>
+  </body>
+</html>

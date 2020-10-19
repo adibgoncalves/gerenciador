@@ -1,0 +1,166 @@
+#login {
+    background-image: url("../img/background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+#containerLogin { 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    padding: 5rem 0;
+}
+
+#loginData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#loginLogo img {
+    margin-bottom: 2rem;
+}
+
+#loginLogo p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+#loginData .user input {
+    height: 3rem;
+    width: 20rem;
+
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+
+    background: #868686;
+    color: #FFFFFF;
+    
+    margin: .5rem 0;
+
+    text-indent: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    transition: .5s;
+}
+
+#loginData .user input:focus {
+    background: #727171;
+}
+
+#loginData .user input::-webkit-input-placeholder {
+    color: #FFFFFF;
+}
+
+#loginData .user .icon {
+    position: absolute;
+    margin-top: 1.4rem;
+    margin-left: 1rem;
+    z-index: 10;
+}
+
+#loginButton button {
+    height: 3rem;
+    width: 20rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+
+    background: #66798B;
+    color: #FFFFFF;
+    font-size: 14px;
+    margin: 13px 0;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+}
+
+#signature {
+    margin-top: 5rem;
+}
+
+#signature p {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+}
+
+#signature p span {
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+@media (min-width: 600px) {
+    #login {
+        height: auto;
+        width: 100%;
+        background-image: url("../img/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media (min-width: 992px) {
+
+    #loginData .user input {
+        height: 3rem;
+        width: 20rem;
+    }
+
+    #loginButton button {
+        height: 3rem;
+        width: 20rem;
+        transition: .5s;
+    }
+
+    #loginButton button:hover {
+        transform: scale(1.1);
+        background: #647688;
+    }
+
+    #loginData .user .icon {
+        position: absolute;
+        margin-top: 1.rem;
+        margin-left: 1rem;
+        z-index: 10;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    #loginData .user input {
+        height: 3.5rem;
+        width: 25rem;
+    }
+
+    #loginButton button {
+        height: 3.5rem;
+        width: 25rem;
+    }
+
+    #loginData .user .icon {
+        position: absolute;
+        margin-top: 1.7rem;
+        margin-left: 1rem;
+        z-index: 10;
+    }
+
+
+    #signature p {
+        font-size: 1rem;
+    }
+
+}
