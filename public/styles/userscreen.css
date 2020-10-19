@@ -33,7 +33,9 @@
     height: 8rem;
     margin: 1rem 0;
     cursor: pointer;
-    background: #03CEA4;;
+    background: #03CEA4;
+    transition: .5s;
+    transform: scale(.9);
 }
 
 .tasksList a {
@@ -46,6 +48,7 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
+
 }
 
 .tasksList .card .time {
@@ -114,6 +117,9 @@
 }
 
 @media (min-width: 992px) {
+    .tasksList .card:hover {
+        transform: scale(1);
+    }
 
 }
 

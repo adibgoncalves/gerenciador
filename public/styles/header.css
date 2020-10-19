@@ -11,6 +11,10 @@ header {
     background-color: #375064 !important;
 }
 
+header ul {
+    text-align: center;
+}
+
 @media (min-width: 600px) {
     #userScreen nav {
         padding: 1rem 0;
